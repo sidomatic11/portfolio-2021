@@ -7,25 +7,25 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { Link } from "gatsby"
 
-import Header from "./header"
 import "./layout.css"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <header style={{
+        display: "flex",
+        padding: "1.45rem 1.0875rem",
+        margin: "auto auto 40px auto",
+        maxWidth: 960,
+      }}>
+        <h3 style={{'flex-grow': "10"}}>Siddhant Patil</h3>
+        <Link to="/" style={{'flex-grow': "1"}}>Work</Link>
+        <Link to="/about/" style={{'flex-grow': "1"}}>About</Link>
+      </header>
+
       <div
         style={{
           margin: `0 auto`,
@@ -34,10 +34,7 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()},
-          {" Siddhant Patil"}
-        </footer>
+       
       </div>
     </>
   )
