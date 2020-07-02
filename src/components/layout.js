@@ -21,8 +21,8 @@ const Layout = ({ children }) => {
         margin: "auto auto 40px auto",
         maxWidth: 960,
       }}>
-        <h3 style={{'flex-grow': "10"}}>Siddhant Patil</h3>
-        <Link to="/" style={{'flex-grow': "1"}}>Work</Link>
+        <Link to="/"  style={{'flex-grow': "10"}}><h3>Siddhant Patil</h3></Link>
+        <Link to="https://www.notion.so/Portfolio-Siddhant-Patil-86ba31ee936e496b91234dd099667b85" style={{'flex-grow': "1"}}>Portfolio</Link>
         <Link to="/about/" style={{'flex-grow': "1"}}>About</Link>
       </header>
 
