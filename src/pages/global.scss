@@ -1,0 +1,66 @@
+@charset "utf-8";
+@import "~bulma/bulma.sass";
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.homePage {
+
+    @include tablet {
+        width: 769px;
+    }
+
+    @include desktop {
+        width: 1024px;
+    }
+
+    height: 100vh;
+    padding: 0 32px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.headline {
+    font-size: 36px;
+
+    @include tablet {
+        font-size: 48px;
+    }
+
+    @include desktop {
+        font-size: 50px;
+    }
+
+    color: $grey;
+    margin: auto;
+}
+
+.dark {
+    color: $grey-dark;
+}
+
+.mainMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 40px 0;
+    color: $grey;
+
+    .menuLabel {
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        width: 100px;
+        margin: 0 30px;
+
+        &.right {
+           text-align: right; 
+        }
+    }
+
+    .menuLogo {
+        width: 48px;
+        height: 48px;
+    }
+}
