@@ -1,6 +1,11 @@
 @charset "utf-8";
 @import "~bulma/bulma.sass";
 
+// Making all parent containers take full height
+html, body, #___gatsby, #gatsby-focus-wrapper {
+    height: 100%;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -15,11 +20,15 @@ body {
         width: 1024px;
     }
 
-    height: 100vh;
+    height: 100%;
     padding: 0 32px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+
+    .mainMenu {
+        margin: 0 0 40px 0;
+    }
 }
 
 .headline {
@@ -45,7 +54,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 0 40px 0;
+    margin: 40px 0;
     color: $grey;
 
     .menuLabel {
@@ -64,3 +73,50 @@ body {
         height: 48px;
     }
 }
+
+
+//---------- Logo Animation ----------
+
+// #logo {
+//     opacity: 0%;
+//     animation: pulse 5s ease-in-out infinite;
+// }
+
+// #why, #how, #what {
+//     opacity: 0%;
+//     animation: pulse 5s ease-in-out infinite;
+// }
+
+// #why {
+//     opacity: 0%;
+//     animation: pulse 3s ease infinite;
+// }
+
+// #how {
+//     opacity: 0%;
+//     animation: pulse 2s ease infinite;
+//     animation-delay: 1s;
+// }
+
+// #what {
+//     opacity: 0%;
+//     animation: pulse 1s ease infinite;
+//     animation-delay: 2s;
+// }
+
+// @keyframes pulse {
+//     0% {
+//         opacity: 0%;
+//     }
+//     25% {
+//         opacity: 100%;
+//     }
+//     75% {
+//         opacity: 100%;
+//     }
+//     100% {
+//         opacity: 0%;
+//     }
+// }
+
+//----------
