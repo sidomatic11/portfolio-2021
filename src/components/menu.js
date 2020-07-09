@@ -12,7 +12,7 @@ const Menu = () => {
             </Link>
         </div>
 
-        <div className=" image is-48x48">
+        <div className="image is-48x48">
             <Link to="/">
                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="logo">

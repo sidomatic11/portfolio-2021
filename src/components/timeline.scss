@@ -1,0 +1,15 @@
+.element {
+    display: flex;
+    margin: 0 0 30px 0;
+
+    .left {
+        min-width: 80px;
+        box-shadow: inset -5px 0 0 grey;
+        padding: 0 20px;
+    }
+
+    .right {
+        flex-grow: 1;
+        padding: 0 20px;
+    }
+}
