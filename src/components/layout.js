@@ -1,38 +1,80 @@
 import React from "react"
 import PropTypes from "prop-types"
-// import { Link } from "gatsby"
 import Menu from "./../components/menu"
 
 // import "./layout.css"
 
-const Layout = ({ children, isMenuAtBottom }) => {
+var copyEmail = () => {
+  // Create new element
+  var el = document.createElement("textarea")
+  // Set value (string to be copied)
+  el.value = "sid11@uw.edu"
+  // Set non-editable to avoid focus and move outside of view
+  el.setAttribute("readonly", "")
+  el.style = { position: "absolute", left: "-9999px" }
+  document.body.appendChild(el)
+  // Select text inside element
+  el.select()
+  // Copy text to clipboard
+  document.execCommand("copy")
+  // Remove temporary element
+  document.body.removeChild(el)
+  alert("Copied the text: sid11@uw.edu")
+}
+
+const Layout = ({ children, isMenuAtBottom, sAddClass }) => {
+  var sClassName = "layout "
+  if (sAddClass) {
+    sClassName = sClassName + sAddClass
+  }
 
   return (
-    <div className="layout">
-      {/* <header style={{
-        display: "flex",
-        padding: "1.45rem 1.0875rem",
-        margin: "auto auto 40px auto",
-        maxWidth: 960,
-      }}>
-        <Link to="/"  style={{'flex-grow': "10"}}><h3>Siddhant Patil</h3></Link>
-        <Link to="https://www.notion.so/Portfolio-Siddhant-Patil-86ba31ee936e496b91234dd099667b85" style={{'flex-grow': "1"}}>Portfolio</Link>
-        <Link to="/about/" style={{'flex-grow': "1"}}>About</Link>
-      </header> */}
-
-      {isMenuAtBottom ? null : <Menu/>}
+    <div className={sClassName}>
+      <Menu />
 
       <main>{children}</main>
 
-      {isMenuAtBottom ? <Menu/> : null}
+      {/* ===== FOOTER ===== */}
+      <div className="footer">
+        <br />
 
+        <h3>Get in touch —</h3>
+
+        <p>
+          <a href="mailto:sid11@uw.edu" target="_blank" rel="noreferrer">
+            <span className="link">Email</span>
+          </a>
+          {/* <p onClick={copyEmail}>Copy email to clipboard</p> */}
+        </p>
+
+        <p>
+          <a
+            href="https://www.linkedin.com/in/patilsiddhant/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span className="link">LinkedIn</span>
+          </a>
+        </p>
+
+        <p>
+          <a
+            href="https://twitter.com/sidomatic11"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span className="link">Twitter</span>
+          </a>
+        </p>
+      </div>
     </div>
   )
 }
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-  isMenuAtBottom: PropTypes.bool
+  isMenuAtBottom: PropTypes.bool,
+  sAddClass: PropTypes.string,
 }
 
 export default Layout

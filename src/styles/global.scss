@@ -1,0 +1,416 @@
+@charset "utf-8";
+@import "~bulma/sass/utilities/_all";
+@import "~bulma/sass/base/_all";
+
+// ----- COLORS -----
+$orange: #ffa347;
+$yellow: #ffda47;
+$purple: #784ef0;
+$gray-1: #333333;
+$gray-2: #4f4f4f;
+$gray-3: #828282;
+$gray-4: #bdbdbd;
+$gray-5: #e0e0e0;
+$white: #ffffff;
+
+// Making all parent containers take full height
+html,
+body,
+#___gatsby,
+#gatsby-focus-wrapper {
+  height: 100%;
+}
+
+// ----- TYPOGRAPHY -----
+
+h1 {
+  font-family: Quattrocento;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 42px;
+  margin: 20px 0;
+
+  @include tablet {
+    font-size: 48px;
+    line-height: 53px;
+  }
+}
+
+h2 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 38px;
+  margin: 20px 0;
+
+  @include tablet {
+    font-size: 36px;
+    line-height: 49px;
+  }
+}
+
+h3 {
+  font-family: Quattrocento;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 24px;
+  margin: 15px 0;
+
+  @include tablet {
+    font-size: 24px;
+    line-height: 27px;
+  }
+}
+
+h4 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  color: $gray-3;
+}
+
+html,
+body,
+p {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: $gray-1;
+}
+
+p {
+  margin: 15px 0;
+}
+
+.caption {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+// ----- SPACING -----
+
+.br-s {
+  margin-bottom: 40px;
+}
+
+.br-m {
+  margin-bottom: 60px;
+}
+
+.br-l {
+  margin-bottom: 80px;
+}
+
+.space-s {
+  width: 100%;
+  height: 20px;
+}
+
+.space-m {
+  width: 100%;
+  height: 40px;
+}
+
+.space-l {
+  width: 100%;
+  height: 60px;
+}
+
+// ----- LINKS -----
+a {
+  color: inherit;
+
+  &:hover {
+    color: $orange;
+  }
+}
+
+.link {
+  // text-decoration: underline orange;
+  border-bottom: 1px solid $orange;
+}
+
+.tooltip {
+  cursor: default;
+  border-bottom: 2px dotted $yellow;
+}
+
+.layout {
+  $padding: 20px;
+  @include tablet {
+    width: 769px;
+  }
+
+  min-height: 100%;
+  padding: $padding;
+  margin: 0 auto auto auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .footer {
+    position: absolute;
+    top: 100%;
+    padding: 0 0 50px 0;
+    background-color: $white;
+    width: calc(100% - 2 *#{$padding});
+    border-top: 1px solid $gray-4;
+  }
+}
+
+.dark {
+  color: $grey-dark;
+}
+
+.mainMenu {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  min-height: 48px;
+  margin: 0 0 70px 0;
+  color: $grey;
+  text-decoration: none;
+
+  .menuLabel {
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin: 0 0 0 30px;
+
+    &.right {
+      text-align: right;
+    }
+
+    > a {
+      color: #7a7a7a;
+    }
+
+    &:hover {
+      > a {
+        color: #ffb340;
+        transition: 0.3s ease-in;
+      }
+    }
+  }
+
+  // .menuLogo {
+  //   width: 48px;
+  //   height: 48px;
+  // }
+
+  #logo {
+    &:hover {
+      #how {
+        fill: #ffe040;
+        transition: 0.3s ease-in;
+      }
+      #what {
+        fill: #ffb340;
+        transition: 0.3s ease-in;
+      }
+    }
+  }
+}
+
+// ----- HOME PAGE -----
+.homePage {
+  height: 100%;
+
+  #how {
+    fill: #ffe040;
+  }
+  #what {
+    fill: #ffb340;
+  }
+
+  main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .headline {
+    cursor: default;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 49px;
+
+    @include tablet {
+      font-size: 48px;
+      line-height: 65px;
+    }
+
+    color: $grey;
+  }
+
+  .crossDisciplinary {
+    border-bottom: 3px dotted $yellow;
+
+    &:hover {
+      color: $gray-3;
+    }
+  }
+
+  .crossDisciplinaryTooltip {
+    // background-color: $gray-1;
+    width: 300px;
+    > p {
+      color: $white;
+    }
+  }
+}
+
+// ----- ABOUT PAGE -----
+.aboutPage {
+  #id-about {
+    color: $orange;
+  }
+  .profilePicture {
+    height: 300px;
+    background-color: gray;
+    width: 100%;
+  }
+}
+
+// ----- WORK -----
+.workPage {
+  #id-work {
+    color: $orange;
+  }
+
+  .projectItem {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .containerLeft {
+      width: 420px;
+      flex-grow: 1;
+
+      .projectName,
+      .projectDescription {
+        margin-bottom: 8px;
+      }
+    }
+
+    .containerRight {
+      min-width: 220px;
+      color: $purple;
+      // flex-basis: 200px;
+    }
+  }
+}
+
+// ---- TEMP ----
+.wip {
+  padding: 10px;
+  background-color: #fffae2;
+  border-radius: 5px;
+}
+
+// ----- ARCHIVE -----
+
+// ----- LISTS -----
+// ul {
+//   list-style: disc;
+// }
+// ol {
+//   list-style: decimal;
+// }
+// ol,
+// ul {
+//   padding-left: 0;
+//   margin-top: 0;
+// }
+// ul ul,
+// ul ol,
+// ol ol,
+// ol ul {
+//   margin: 1.5rem 0 1.5rem 3rem;
+//   font-size: 90%;
+// }
+// li {
+//   margin: 0 0 1rem 2rem;
+// }
+
+//---------- Logo Animation ----------
+
+// #logo {
+//     // opacity: 0%;
+//     animation: saturate 5s ease-in-out infinite;
+// }
+
+// #why, #how, #what {
+//     // opacity: 0%;
+//     animation: pulse 5s ease-in-out infinite;
+// }
+
+// #why {
+//     opacity: 0%;
+//     animation: pulse 3s ease infinite;
+// }
+
+// #how {
+//     opacity: 0%;
+//     animation: pulse 2s ease infinite;
+//     animation-delay: 1s;
+// }
+
+// #what {
+//     opacity: 0%;
+//     animation: pulse 1s ease infinite;
+//     animation-delay: 2s;
+// }
+
+// @keyframes pulse {
+//     0% {
+//         opacity: 0%;
+//     }
+//     25% {
+//         opacity: 100%;
+//     }
+//     75% {
+//         opacity: 100%;
+//     }
+//     100% {
+//         opacity: 0%;
+//     }
+// }
+
+// @keyframes saturate {
+//   0% {
+//     filter: grayscale(100%);
+//   }
+//   25% {
+//       filter: grayscale(0%);
+//   }
+//   75% {
+//     filter: grayscale(0%);
+//   }
+//   100% {
+//     filter: grayscale(100%);
+//   }
+// }
+
+//----------
