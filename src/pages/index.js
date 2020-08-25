@@ -48,7 +48,7 @@ const IndexPage = () => {
         </div>
       </ReactTooltip> : null}
 
-      <br />
+      <div className="space-s" />
 
       <div>
         <span className="link">

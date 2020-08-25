@@ -18,7 +18,7 @@ const AboutPage = () => (
       as a software developer for two years after completing bachelors in
       Computer Engineering.
     </p>
-    <p>🦄 <span className="tooltip">Human Centered Designer</span></p>
+    <p>🦄 <span>Human Centered Designer</span></p>
     <p>🛠 Creative problem solver</p>
     <p>👓 XR enthusiast</p>
     <p>🧐 Critical Thinker </p>
@@ -33,7 +33,7 @@ const AboutPage = () => (
       whether you are aware of it or not. Simple technologies can become strong
       with its support while the other complex, feature rich ones can become
       weak without it. It is neutral in itself, but has the potential for good
-      as well as evil based on how it is wielded. Our duty as the creators of
+      or bad based on how it is wielded. Our duty as the creators of
       technology is to use this Force positively and responsibly.
     </p>
 

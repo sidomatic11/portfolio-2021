@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Menu from "./../components/menu"
+import oImgFooter from "./../images/footer.png"
 
 // import "./layout.css"
 
@@ -36,6 +37,8 @@ const Layout = ({ children, isMenuAtBottom, sAddClass }) => {
 
       {/* ===== FOOTER ===== */}
       <div className="footer">
+
+        <img src={oImgFooter}></img>
         <br />
 
         <h3>Get in touch —</h3>
@@ -44,7 +47,7 @@ const Layout = ({ children, isMenuAtBottom, sAddClass }) => {
           <a href="mailto:sid11@uw.edu" target="_blank" rel="noreferrer">
             <span className="link">Email</span>
           </a>
-          {/* <p onClick={copyEmail}>Copy email to clipboard</p> */}
+          <span onClick={copyEmail} className="link" id="copyEmail">[copy email to clipboard]</span>
         </p>
 
         <p>
