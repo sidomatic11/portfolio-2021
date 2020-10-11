@@ -12,13 +12,16 @@ const AboutPage = () => (
     <h1>Hello! I’m Siddhant Patil 🙂</h1>
     <img src={ImgProfile}></img>
     <p>
-      I recently graduated with a Masters in Human Centered Design and
-      Engineering from the University of Washington and have been working part
-      time as a UX Designer at UW School of Nursing. Previously, I have worked
-      as a software developer for two years after completing bachelors in
-      Computer Engineering.
+      I recently graduated with a Masters in Human Centered Design and Engineering 
+      from the University of Washington and have
+      been working as a 
+      UX Designer at UW School of Nursing. 
+      Previously, I have worked as a software developer for about two years
+      after completing bachelors in Computer Engineering.
     </p>
-    <p>🦄 <span>Human Centered Designer</span></p>
+    <p>
+      🦄 <span>Human Centered Designer</span>
+    </p>
     <p>🛠 Creative problem solver</p>
     <p>👓 XR enthusiast</p>
     <p>🧐 Critical Thinker </p>
@@ -33,8 +36,8 @@ const AboutPage = () => (
       whether you are aware of it or not. Simple technologies can become strong
       with its support while the other complex, feature rich ones can become
       weak without it. It is neutral in itself, but has the potential for good
-      or bad based on how it is wielded. Our duty as the creators of
-      technology is to use this Force positively and responsibly.
+      or bad based on how it is wielded. Our duty as the creators of technology
+      is to use this Force positively and responsibly.
     </p>
 
     <h3 className="br-l">

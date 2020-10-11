@@ -21,7 +21,7 @@ var oProjectData = {
       description:
         "Building a platform to help older adults adhere to the mediterranean diet.",
       tags: "ux design, mobile",
-      link: "",
+      link: "https://www.notion.so/Olitor-App-UW-School-of-Nursing-094630a0cc714395905ad675631a6c4f",
       image: oImgOlitor,
     },
     {
@@ -30,13 +30,14 @@ var oProjectData = {
       description:
         "Helping designers and developers build multitasking systems in XR.",
       tags: "xr design, emerging tech",
-      link: "",
+      link: "https://www.notion.so/XR-Multitasking-Design-Guide-7d7b5e393bd34aa6a81090839dd869c0",
       image: oImgXRM,
     },
     {
       id: "id_sbc",
       name: "Seattle Badminton Club Website",
-      description: "Redesigning the website for a more welcoming and efficient experience.",
+      description:
+        "Redesigning the website for a more welcoming and efficient experience.",
       tags: "ux design, web",
       link: "",
       image: oImgSBC,
@@ -49,24 +50,8 @@ var oProjectData = {
       description:
         "Design and development of highly functional web components.",
       tags: "web development, enterprise",
-      link: "",
-      image: oImgContentserv
-    },
-    {
-      id: "id_mozilla",
-      name: "Mozilla Firefox Listen",
-      description: "Usability study for Mozilla's upcoming app.",
-      tags: "usability study",
-      link: "",
-      image: oImgMozilla
-    },
-    {
-      id: "id_cascade",
-      name: "Cascade Bicycle Club",
-      description: "Designing a new visual system for the organization.",
-      tags: "visual design",
-      link: "",
-      image: oImgCascade
+      link: "https://www.notion.so/Contentserv-Software-Development-171b41fa91b645c3b1dcfaf48dfffc18",
+      image: oImgContentserv,
     },
     {
       id: "id_ttt",
@@ -74,8 +59,25 @@ var oProjectData = {
       description:
         "A two player, touch based tic-tac-toe game that can be installed in public places.",
       tags: "physical prototype, arduino",
+      link:
+        "https://www.notion.so/Tic-Tac-Toe-Physical-Prototype-6cb820a20adb45b4879acbc5db20fe6f",
+      image: oImgTicTacToe,
+    },
+    {
+      id: "id_mozilla",
+      name: "Mozilla Firefox Listen",
+      description: "Usability study for Mozilla's upcoming app.",
+      tags: "usability study",
       link: "",
-      image: oImgTicTacToe
+      image: oImgMozilla,
+    },
+    {
+      id: "id_cascade",
+      name: "Cascade Bicycle Club",
+      description: "Designing a new visual system for the organization.",
+      tags: "visual design",
+      link: "",
+      image: oImgCascade,
     },
     // {
     //   id: "id_arhealth",
@@ -92,19 +94,19 @@ var oProjectData = {
         "Empowering high school teachers to identify students who may be experiencing mental health issues.",
       tags: "ux research, ideation",
       link: "",
-      image: oImgSafetyNet
+      image: oImgSafetyNet,
     },
   ],
 }
 
 var getProjectDOMs = aProjects =>
   aProjects.map(project => {
-    var sProjectNameClasses = "projectName bold ";
+    var sProjectNameClasses = "projectName bolder "
     if (project.image) {
-      sProjectNameClasses += "tooltip ";
+      sProjectNameClasses += "tooltip "
     }
     if (project.link) {
-      sProjectNameClasses += "link ";
+      sProjectNameClasses += "link "
     }
 
     return (
@@ -113,12 +115,18 @@ var getProjectDOMs = aProjects =>
           {/* <Link to={project.link}><span className="projectName bold link">{project.name}</span></Link> */}
           <div className={sProjectNameClasses} data-tip data-for={project.id}>
             {project.link ? (
-              <Link to={"/work" + project.link}>
+              <a href={project.link} target="_blank" rel="noreferrer">
                 {project.name}
-              </Link>
+              </a>
             ) : (
               project.name
             )}
+            {/* {project.link ? (
+              <Link to={"/work/" + project.link + "/"}>
+                {project.name}
+              </Link>
+            ) : (
+              project.name)} */}
           </div>
           <div className="projectDescription caption">
             {project.description}
@@ -126,7 +134,11 @@ var getProjectDOMs = aProjects =>
         </div>
         <div className="containerRight">{project.tags}</div>
         {project.image ? (
-          <ReactTooltip id={project.id} effect="solid" className="projectImageTooltip">
+          <ReactTooltip
+            id={project.id}
+            effect="solid"
+            className="projectImageTooltip"
+          >
             <img src={project.image} className="projectImage"></img>
           </ReactTooltip>
         ) : null}

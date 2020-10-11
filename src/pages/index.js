@@ -1,13 +1,10 @@
 import React, { useEffect, useState } from "react"
-import "../styles/global.scss"
 // import logo from "./../images/logo.svg"
 // import Menu from "./../components/menu"
 import Layout from "../components/layout"
 import { Link } from "gatsby"
 import ReactTooltip from "react-tooltip"
 
-require("typeface-open-sans")
-require("typeface-quattrocento")
 
 const IndexPage = () => {
 
