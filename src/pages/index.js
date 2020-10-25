@@ -20,18 +20,6 @@ import oImgCopyIcon from "./../images/icons/content-copy.svg"
 var oProjectData = {
   featured: [
     {
-      id: "id_olitor",
-      name: "Olitor App – UW School of Nursing",
-      description:
-        "Building a platform to help older adults adhere to the mediterranean diet.",
-      role:
-        "Secondary Research, Ideation, Design, Prototyping, Usability, Design and Development Strategy",
-      tags: ["2020", "•", "ux design", "mobile", "strategy"],
-      link:
-        "https://www.notion.so/Olitor-App-UW-School-of-Nursing-094630a0cc714395905ad675631a6c4f",
-      image: oImgOlitor,
-    },
-    {
       id: "id_xrm",
       name: "XR Multitasking Design Guide",
       description:
@@ -42,6 +30,18 @@ var oProjectData = {
       link:
         "https://www.notion.so/XR-Multitasking-Design-Guide-7d7b5e393bd34aa6a81090839dd869c0",
       image: oImgXRM,
+    },
+    {
+      id: "id_olitor",
+      name: "Olitor App – UW School of Nursing",
+      description:
+        "Building a platform to help older adults adhere to the mediterranean diet.",
+      role:
+        "Secondary Research, Ideation, Design, Prototyping, Usability, Design and Development Strategy",
+      tags: ["2020", "•", "ux design", "mobile", "strategy"],
+      link:
+        "https://www.notion.so/Olitor-App-UW-School-of-Nursing-094630a0cc714395905ad675631a6c4f",
+      image: oImgOlitor,
     },
     // {
     //   id: "id_sbc",

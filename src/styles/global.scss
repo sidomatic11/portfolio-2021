@@ -42,6 +42,12 @@ $white: #ffffff;
   width: 100vw;
 }
 
+@mixin sketch-pattern {
+  background-image: url("../images/sketch-pattern.png");
+  background-size: 500px 500px;
+  background-repeat: repeat;
+}
+
 // Making all parent containers take full height
 html,
 body,
@@ -305,10 +311,10 @@ a {
 }
 
 .layout {
-  max-width: 400px;
+  max-width: 500px;
 
   @include tablet {
-    max-width: 740px;
+    max-width: none;
   }
   @include desktop {
     max-width: 1000px;
@@ -592,23 +598,27 @@ a {
     z-index: -1;
     background-color: $gray-1;
     @include full-bleed();
+    @include sketch-pattern();
   }
 
   &.level-one {
     &:before {
       opacity: 0.95;
+      background-position: 10% 5%;
     }
   }
 
   &.level-two {
     &:before {
       opacity: 0.9;
+      background-position: 75% 90%;
     }
   }
 
   &.level-three {
     &:before {
       opacity: 0.85;
+      background-position: 50% 50%;
     }
   }
 }
