@@ -1,7 +1,13 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Menu from "./../components/menu"
-import oImgFooter from "./../images/footer.png"
+
+import Button from "./../components/button"
+
+import oImgSendIcon from "./../images/icons/send.svg"
+import oImgCopyIcon from "./../images/icons/content-copy.svg"
+import oImgLinkedInIcon from "./../images/icons/linkedin.svg"
+import oImgTwitterIcon from "./../images/icons/twitter.svg"
 
 // import "./layout.css"
 
@@ -35,41 +41,22 @@ const Layout = ({ children, isMenuAtBottom, sAddClass }) => {
 
       <main>{children}</main>
 
-      {/* ===== FOOTER ===== */}
       <div className="footer">
 
-        <img src={oImgFooter}></img>
-        <br />
+        <h3>Get in touch</h3>
 
-        <h3>Get in touch —</h3>
+        <div className="connect-buttons-wrapper">
 
-        <p>
-          <a href="mailto:sid11@uw.edu" target="_blank" rel="noreferrer">
-            <span className="link">Email</span>
-          </a>
-          <span onClick={copyEmail} className="link" id="copyEmail">[copy email to clipboard]</span>
-        </p>
+          <Button sLabel="Send Email" oIcon={oImgSendIcon} sLink="mailto:sid11@uw.edu"/>
+          <Button sLabel="Copy Email" oIcon={oImgCopyIcon} fOnClick={copyEmail}/>
+          <Button sLabel="LinkedIn" oIcon={oImgLinkedInIcon} sLink="https://www.linkedin.com/in/patilsiddhant/"/>
+          <Button sLabel="Twitter" oIcon={oImgLinkedInIcon} sLink="https://twitter.com/sidomatic11"/>
 
-        <p>
-          <a
-            href="https://www.linkedin.com/in/patilsiddhant/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span className="link">LinkedIn</span>
-          </a>
-        </p>
+        </div>
 
-        <p>
-          <a
-            href="https://twitter.com/sidomatic11"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span className="link">Twitter</span>
-          </a>
-        </p>
+        <p>© Copyright {new Date().getFullYear()} — designed and developed by Siddhant Patil</p>
       </div>
+
     </div>
   )
 }

@@ -9,44 +9,40 @@ import ImgProfile from "../images/profile.png"
 
 const AboutPage = () => (
   <Layout sAddClass="aboutPage">
-    <h1>Hello! I’m Siddhant Patil 🙂</h1>
-    <img src={ImgProfile}></img>
-    <p>
-      I recently graduated with a Masters in Human Centered Design and Engineering 
-      from the University of Washington and have
-      been working as a 
-      UX Designer at UW School of Nursing. 
-      Previously, I have worked as a software developer for about two years
-      after completing bachelors in Computer Engineering.
-    </p>
-    <p>
-      🦄 <span>Human Centered Designer</span>
-    </p>
-    <p>🛠 Creative problem solver</p>
-    <p>👓 XR enthusiast</p>
-    <p>🧐 Critical Thinker </p>
-    <p>💪🏽 Enjoys working on challenging problems</p>
-    <p>🌿 Loves philosophical and spiritual discussions</p>
-    <p className="br-l">🤣 Occassionally makes insider memes</p>
-
-    <h3>How I think about the role of Design in Technology —</h3>
-    <p className="br-l">
-      Design, to the world of technology, is what &lsquo;the Force&rsquo; is to
-      the world of Star Wars. Omnipresent and eternal, it always plays its part,
-      whether you are aware of it or not. Simple technologies can become strong
-      with its support while the other complex, feature rich ones can become
-      weak without it. It is neutral in itself, but has the potential for good
-      or bad based on how it is wielded. Our duty as the creators of technology
-      is to use this Force positively and responsibly.
-    </p>
-
-    <h3 className="br-l">
-      <a href="https://bit.ly/3gavqzw" target="_blank" rel="noreferrer">
-        <span className="link">View Resume</span>
-      </a>
-    </h3>
-
-    <br />
+    <div className="wrapper">
+      <img className="about-image" src={ImgProfile}></img>
+      <h3 className="about-heading">background</h3>
+      <h5 className="content">
+        I recently graduated with a Master’s in Human Centered Design and
+        Engineering from the University of Washington and have been working as a
+        UX Designer at UW School of Nursing. Previously, I worked as a Software
+        Developer after completing my Bachelor’s in Computer Engineering.
+      </h5>
+      <h3 className="about-heading">strengths</h3>
+      <h5 className="content mid">
+        The cross-disciplinary background allows me to bridge the gaps between
+        research, design and engineering.
+      </h5>
+      <h5 className="content mid">
+        When designing solutions I think not only about the interface, but also
+        about how the entire system works; how the different parts connect with
+        each other and work together. This ability helps me keep my team
+        grounded and ensure that our designs are practical.
+      </h5>
+      <h5 className="content">
+        I work best in dynamic environments, with a passion for making things as
+        efficient and effective as possible.
+      </h5>
+      <h3 className="about-heading">design philosophy</h3>
+      <h5 className="content last">
+        I believe that Design is just like the Force from Star Wars. It is
+        omnipresent and eternal. It always plays its part, regardless of our
+        cognizance. Simple technologies can become strong with its support while
+        complex, feature-packed ones can be weak without it. It is neutral in
+        itself and has the potential for good or evil. Our duty as the creators
+        of technology is to wield this Force positively and responsibly.
+      </h5>
+    </div>
   </Layout>
 )
 

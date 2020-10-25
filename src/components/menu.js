@@ -4,48 +4,57 @@ import { Link } from "gatsby"
 const Menu = () => {
   return (
     <div className="mainMenu">
-
       <div className="image is-48x48">
         <Link to="/">
           <svg
-            width="48"
-            height="48"
-            viewBox="0 0 48 48"
+            width="42"
+            height="42"
+            viewBox="0 0 42 42"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
             <g id="logo">
-              <path
-                id="what"
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48ZM24.0571 40.0571C32.8937 40.0571 40.0571 32.8937 40.0571 24.0571C40.0571 15.2206 32.8937 8.05714 24.0571 8.05714C15.2206 8.05714 8.05714 15.2206 8.05714 24.0571C8.05714 32.8937 15.2206 40.0571 24.0571 40.0571Z"
-                fill="#BDBDBD"
-              />
-              <path
-                id="how"
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M24.0571 40.0571C32.8937 40.0571 40.0571 32.8937 40.0571 24.0571C40.0571 15.2206 32.8937 8.05713 24.0571 8.05713C15.2206 8.05713 8.05713 15.2206 8.05713 24.0571C8.05713 32.8937 15.2206 40.0571 24.0571 40.0571ZM23.9428 31.9428C28.3611 31.9428 31.9428 28.3611 31.9428 23.9428C31.9428 19.5246 28.3611 15.9428 23.9428 15.9428C19.5246 15.9428 15.9428 19.5246 15.9428 23.9428C15.9428 28.3611 19.5246 31.9428 23.9428 31.9428Z"
-                fill="#D8D8D8"
-              />
-              <circle id="why" cx="23.9429" cy="23.9429" r="8" fill="#F2F2F2" />
+              <g id="logo_grayscale_280">
+                <path
+                  d="M0 21C0 9.40202 9.40202 0 21 0V0C32.598 0 42 9.40202 42 21V21C42 32.598 32.598 42 21 42V42C9.40202 42 0 32.598 0 21V21Z"
+                  fill="white"
+                />
+                <path
+                  id="what"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M21 42C32.598 42 42 32.598 42 21C42 9.40202 32.598 0 21 0C9.40202 0 0 9.40202 0 21C0 32.598 9.40202 42 21 42ZM21.05 35.05C28.782 35.05 35.05 28.782 35.05 21.05C35.05 13.318 28.782 7.05 21.05 7.05C13.318 7.05 7.05 13.318 7.05 21.05C7.05 28.782 13.318 35.05 21.05 35.05Z"
+                  fill="#B4B4B4"
+                />
+                <path
+                  id="how"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M21.05 35.05C28.782 35.05 35.05 28.782 35.05 21.05C35.05 13.318 28.782 7.05 21.05 7.05C13.3181 7.05 7.05005 13.318 7.05005 21.05C7.05005 28.782 13.3181 35.05 21.05 35.05ZM20.95 27.95C24.816 27.95 27.95 24.816 27.95 20.95C27.95 17.084 24.816 13.95 20.95 13.95C17.0841 13.95 13.9501 17.084 13.9501 20.95C13.9501 24.816 17.0841 27.95 20.95 27.95Z"
+                  fill="#D5D5D5"
+                />
+                <circle id="why" cx="20.9499" cy="20.95" r="7" fill="#F2F2F2" />
+              </g>
             </g>
           </svg>
         </Link>
       </div>
 
-      <div className=" menuLabel">
-        {/* <a href="https://www.notion.so/Portfolio-Siddhant-Patil-86ba31ee936e496b91234dd099667b85">
-          work
-        </a> */}
-        <h4><Link to="/work/" id="id-work">work</Link></h4>
-      </div>
+      <div className="menuRight">
+        <div className=" menuLabel">
+          <a href="http://bit.ly/2WQvnP6" target="_blank" rel="noreferrer">
+            <h3>resume</h3>
+          </a>
+        </div>
 
-      <div className=" menuLabel">
-        <h4><Link to="/about/" id="id-about">about</Link></h4>
+        <div className=" menuLabel">
+          <h3>
+            <Link to="/about/" id="id-about">
+              about
+            </Link>
+          </h3>
+        </div>
       </div>
-
     </div>
   )
 }
