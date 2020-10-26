@@ -192,7 +192,7 @@ const IndexPage = () => {
 
           <div className="banner level-three">
             <h1>
-              but I’d prefer —{" "}<br/>
+              but I’d prefer — <br />
               <span className="white">Creative Problem Solver</span> :)
             </h1>
           </div>
@@ -224,19 +224,20 @@ const IndexPage = () => {
             <br />
             <br />
             <div className="reach-out">
-            <h1 className="white">Reach out —</h1>
-            <Button
-              sLabel="Send Email"
-              oIcon={oImgSendIcon}
-              sLink="mailto:sid11@uw.edu"
-            />
-            <Button
-              sLabel="Copy Email"
-              oIcon={oImgCopyIcon}
-              fOnClick={copyEmail}
-            />
+              <h1 className="white">Reach out —</h1>
+              <div className="reach-out-buttons">
+                <Button
+                  sLabel="Send Email"
+                  oIcon={oImgSendIcon}
+                  sLink="mailto:sid11@uw.edu"
+                />
+                <Button
+                  sLabel="Copy Email"
+                  oIcon={oImgCopyIcon}
+                  fOnClick={copyEmail}
+                />
+              </div>
             </div>
-            
           </div>
         </div>
       </div>

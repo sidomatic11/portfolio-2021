@@ -10,7 +10,15 @@ import ImgProfile from "../images/profile.png"
 const AboutPage = () => (
   <Layout sAddClass="aboutPage">
     <div className="wrapper">
-      <img className="about-image" src={ImgProfile}></img>
+      <div className="about-image">
+        <img src={ImgProfile}></img>
+        <h1 className="greeting">
+          <span className="white">Hi! My name is Siddhant Patil.</span> You can also call me Sid. :)
+        </h1>
+        {/* <h1 className="greeting">
+          Hi! My name is <span className="white">Siddhant Patil</span>. You can also call me <span className="white">Sid</span>. :)
+        </h1> */}
+      </div>
       <h3 className="about-heading">background</h3>
       <h5 className="content">
         I recently graduated with a Master’s in Human Centered Design and

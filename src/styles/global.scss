@@ -637,37 +637,41 @@ a {
 
   .reach-out {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    // flex-direction: column;
+    // align-items: flex-start;
+    flex-wrap: wrap;
 
     @include tablet {
       display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
+      // flex-direction: row;
+      // justify-content: flex-start;
       align-items: center;
-      flex-wrap: wrap;
     }
 
     h1 {
       margin: 0 20px 4px 0;
     }
 
-    .button-small {
-      color: white;
-      margin: 0 20px 10px 0;
-      background-color: $gray-3;
+    .reach-out-buttons {
+      display: flex;
 
-      &:hover {
-        background-color: $gray-4;
-      }
+      .button-small {
+        color: white;
+        margin: 0 20px 10px 0;
+        background-color: $gray-3;
 
-      &:active {
-        background-color: $gray-2;
-        transition: none;
-      }
+        &:hover {
+          background-color: $gray-4;
+        }
 
-      @include desktop {
-        margin: 0 20px 0 0;
+        &:active {
+          background-color: $gray-2;
+          transition: none;
+        }
+
+        @include desktop {
+          margin: 0 20px 0 0;
+        }
       }
     }
   }
@@ -713,24 +717,59 @@ a {
 
 .about-image {
   grid-column: 1 / -1;
-  margin: 40px 0 20px 0;
+  padding: 40px 0 20px 0;
   border-radius: 5px;
+  margin-bottom: 40px;
+  color: $gray-4;
 
   @include tablet {
-    margin: 60px 0 40px 0;
+    grid-column: 2 / -2;
+    padding: 60px 0 40px 0;
   }
 
   @include desktop {
     grid-column: 2 / -2;
   }
+
+  position: relative;
+
+  &:before {
+    content: "";
+    z-index: -1;
+    background-color: $gray-1;
+    @include full-bleed();
+    @include sketch-pattern();
+    opacity: 0.95;
+  }
+
+  img {
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
 }
+
+// .greeting {
+//   grid-column: 1 / -1;
+//   margin: 40px 0 20px 0;
+//   border-radius: 5px;
+
+//   @include tablet {
+//     margin: 60px 0 40px 0;
+//   }
+
+//   @include desktop {
+//     grid-column: 2 / -2;
+//   }
+// }
 
 .about-heading {
   grid-column: 1 / -1;
 
   @include tablet {
-    grid-column: 1 / 2;
-    text-align: right;
+    // grid-column: 1 / 2;
+    grid-column: 2 / -2;
+    // text-align: right;
+    text-align: left;
   }
 
   @include desktop {
@@ -745,7 +784,8 @@ a {
   margin-bottom: 20px;
 
   @include tablet {
-    grid-column: 2 / -1;
+    // grid-column: 2 / -1;
+    grid-column: 2 / -2;
   }
 
   @include desktop {
@@ -852,31 +892,39 @@ a {
   color: $white;
 }
 
+.yellow {
+  color: $yellow;
+}
+
+.orange {
+  color: $orange;
+}
+
 .g1 {
   color: $gray-1;
 }
 
-.g1 {
+.g2 {
   color: $gray-2;
 }
 
-.g1 {
+.g3 {
   color: $gray-3;
 }
 
-.g1 {
+.g4 {
   color: $gray-4;
 }
 
-.g1 {
+.g5 {
   color: $gray-5;
 }
 
-.g1 {
+.g6 {
   color: $gray-6;
 }
 
-.g1 {
+.g7 {
   color: $gray-7;
 }
 // -----
