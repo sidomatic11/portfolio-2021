@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react"
+import { Helmet } from "react-helmet"
 // import logo from "./../images/logo.svg"
 // import Menu from "./../components/menu"
 import Layout from "../components/layout"
@@ -175,6 +176,14 @@ const IndexPage = () => {
   var aFeaturedProjects = getProjectDOMs(oProjectData.featured)
 
   return (
+    <>
+
+    <Helmet>
+    <title>Siddhant Patil — UX Designer</title>
+            <meta name="title" content="Siddhant Patil — UX Designer" />
+            <meta name="description" content="Siddhant is a User Experience Designer based in Seattle. He recently graduated with a Masters in Human Centered Design and Engineering from the University of Washington and has a background in Computer Engineering. He has been working in the tech industry for 3 years." />
+    </Helmet>
+
     <Layout sAddClass="homePage">
       <div class="wrapper">
         <div class="grid-item intro">
@@ -242,6 +251,7 @@ const IndexPage = () => {
         </div>
       </div>
     </Layout>
+    </>
   )
 }
 
