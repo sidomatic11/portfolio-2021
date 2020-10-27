@@ -43,7 +43,7 @@ const Layout = ({ children, isMenuAtBottom, sAddClass }) => {
 
       <div className="footer">
 
-        <h3>Get in touch</h3>
+        <h3 className="get-in-touch">Get in touch</h3>
 
         <div className="connect-buttons-wrapper">
 
@@ -54,7 +54,7 @@ const Layout = ({ children, isMenuAtBottom, sAddClass }) => {
 
         </div>
 
-        <p>© Copyright {new Date().getFullYear()} — designed and developed by Siddhant Patil</p>
+        <p className="copyright">© Copyright {new Date().getFullYear()} — designed and developed by Siddhant Patil</p>
       </div>
 
     </div>
