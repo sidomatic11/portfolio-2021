@@ -177,80 +177,86 @@ const IndexPage = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Siddhant Patil — UX Designer</title>
+        <meta name="title" content="Siddhant Patil — UX Designer" />
+        <meta
+          name="description"
+          content="Siddhant is a User Experience Designer based in Seattle. He recently graduated with a Masters in Human Centered Design and Engineering from the University of Washington and has a background in Computer Engineering. He has been working in the tech industry for 3 years."
+        />
+      </Helmet>
 
-    <Helmet>
-    <title>Siddhant Patil — UX Designer</title>
-            <meta name="title" content="Siddhant Patil — UX Designer" />
-            <meta name="description" content="Siddhant is a User Experience Designer based in Seattle. He recently graduated with a Masters in Human Centered Design and Engineering from the University of Washington and has a background in Computer Engineering. He has been working in the tech industry for 3 years." />
-    </Helmet>
+      <Layout sAddClass="homePage">
+        <div class="wrapper">
+          <div class="grid-item intro">
+            <div className="banner level-one">
+              <h1>Hello There! </h1>
+              <h1 className="white">I’m Siddhant.</h1>
+            </div>
 
-    <Layout sAddClass="homePage">
-      <div class="wrapper">
-        <div class="grid-item intro">
-          <div className="banner level-one">
-            <h1>Hello There! </h1>
-            <h1 className="white">I’m Siddhant.</h1>
+            <div className="banner level-two">
+              <h1>
+                <span className="white">User Experience Designer</span> would be
+                one way of describing me,
+              </h1>
+            </div>
+
+            <div className="banner level-three">
+              <h1>
+                but I’d prefer — <br />
+                <span className="white">Creative Problem Solver</span> :)
+              </h1>
+            </div>
           </div>
 
-          <div className="banner level-two">
-            <h1>
-              <span className="white">User Experience Designer</span> would be
-              one way of describing me,
-            </h1>
-          </div>
+          <h3 class="grid-item featured">Featured Work</h3>
 
-          <div className="banner level-three">
-            <h1>
-              but I’d prefer — <br />
-              <span className="white">Creative Problem Solver</span> :)
-            </h1>
-          </div>
-        </div>
+          {aFeaturedProjects}
 
-        <h3 class="grid-item featured">Featured Work</h3>
+          {/* <div class="grid-item more">More +</div> */}
 
-        {aFeaturedProjects}
+          <div class="grid-item cta">
+            <div className="banner level-two">
+              <h1>
+                <span>I love solving problems that involve </span>
+                <span className="white">emerging tech</span>
+                <span>, </span>
+                <span className="white">complex systems</span>
+                <span>, or </span>
+                <span className="white">novel interactions</span>.
+              </h1>
+            </div>
 
-        {/* <div class="grid-item more">More +</div> */}
-
-        <div class="grid-item cta">
-          <div className="banner level-two">
-            <h1>
-              I especially enjoy working on problems that involve&nbsp;
-              <span className="white">emerging tech</span>,&nbsp;
-              <span className="white">complex systems</span>, or&nbsp;
-              <span className="white">novel interactions</span>.
-            </h1>
-          </div>
-
-          <div className="banner level-one">
-            <h1>
-              <span className="white">
-                Have a challenging problem to solve?
-              </span>
-              &nbsp; Would like to give me a shot?
-            </h1>
-            <br />
-            <br />
-            <div className="reach-out">
-              <h1 className="white">Reach out —</h1>
-              <div className="reach-out-buttons">
-                <Button
-                  sLabel="Send Email"
-                  oIcon={oImgSendIcon}
-                  sLink="mailto:sid11@uw.edu"
-                />
-                <Button
-                  sLabel="Copy Email"
-                  oIcon={oImgCopyIcon}
-                  fOnClick={copyEmail}
-                />
+            <div className="banner level-one">
+              <h1>
+                <span>Have a </span>
+                <span className="white">challenging problem </span>
+                <span>that I can help break down, simplify and solve for you?</span>
+                {/* &nbsp; Would like to give me a shot? */}
+              </h1>
+              {/* <br></br>
+              <h1>I can help you.</h1> */}
+              <br />
+              <br />
+              <div className="reach-out">
+                <h1 className="white">Reach out —</h1>
+                <div className="reach-out-buttons">
+                  <Button
+                    sLabel="Send Email"
+                    oIcon={oImgSendIcon}
+                    sLink="mailto:sid11@uw.edu"
+                  />
+                  <Button
+                    sLabel="Copy Email"
+                    oIcon={oImgCopyIcon}
+                    fOnClick={copyEmail}
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </Layout>
+      </Layout>
     </>
   )
 }

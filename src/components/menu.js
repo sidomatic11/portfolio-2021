@@ -42,7 +42,7 @@ const Menu = () => {
 
       <div className="menuRight">
         <div className=" menuLabel">
-          <a href="http://bit.ly/2WQvnP6" target="_blank" rel="noreferrer">
+          <a href="https://bit.ly/resume-siddhant-patil" target="_blank" rel="noreferrer">
             <h3>resume</h3>
           </a>
         </div>
