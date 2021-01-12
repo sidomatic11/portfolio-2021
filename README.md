@@ -1,3 +1,3 @@
-Portfolio Website accessible @ www.siddhantpatil.com
+Portfolio website accessible @ www.siddhantpatil.com
 
 Built using Gatsby.js
