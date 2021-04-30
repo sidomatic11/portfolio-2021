@@ -37,26 +37,44 @@ const Layout = ({ children, isMenuAtBottom, sAddClass }) => {
 
   return (
     <div className={sClassName}>
+      {/* Header */}
       <Menu />
 
+      {/* Body */}
       <main>{children}</main>
 
+      {/* Footer */}
       <div className="footer">
-
         <h3 className="get-in-touch">Get in touch</h3>
 
         <div className="connect-buttons-wrapper">
-
-          <Button sLabel="Send Email" oIcon={oImgSendIcon} sLink="mailto:sid11@uw.edu"/>
-          <Button sLabel="Copy Email" oIcon={oImgCopyIcon} fOnClick={copyEmail}/>
-          <Button sLabel="LinkedIn" oIcon={oImgLinkedInIcon} sLink="https://www.linkedin.com/in/patilsiddhant/"/>
-          <Button sLabel="Twitter" oIcon={oImgLinkedInIcon} sLink="https://twitter.com/sidomatic11"/>
-
+          <Button
+            sLabel="Send Email"
+            oIcon={oImgSendIcon}
+            sLink="mailto:sid11@uw.edu"
+          />
+          <Button
+            sLabel="Copy Email"
+            oIcon={oImgCopyIcon}
+            fOnClick={copyEmail}
+          />
+          <Button
+            sLabel="LinkedIn"
+            oIcon={oImgLinkedInIcon}
+            sLink="https://www.linkedin.com/in/patilsiddhant/"
+          />
+          <Button
+            sLabel="Twitter"
+            oIcon={oImgLinkedInIcon}
+            sLink="https://twitter.com/sidomatic11"
+          />
         </div>
 
-        <p className="copyright">© Copyright {new Date().getFullYear()} — designed and developed by Siddhant Patil</p>
+        <p className="copyright">
+          © Copyright {new Date().getFullYear()} — designed and developed by
+          Siddhant Patil
+        </p>
       </div>
-
     </div>
   )
 }

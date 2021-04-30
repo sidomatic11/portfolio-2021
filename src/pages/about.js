@@ -13,18 +13,17 @@ const AboutPage = () => (
       <div className="about-image">
         <img src={ImgProfile}></img>
         <h1 className="greeting">
-          <span className="white">Hi! My name is Siddhant Patil.</span> You can also call me Sid. :)
+          <span className="white">Hi! My name is Siddhant Patil.</span> You can
+          also call me Sid :)
         </h1>
-        {/* <h1 className="greeting">
-          Hi! My name is <span className="white">Siddhant Patil</span>. You can also call me <span className="white">Sid</span>. :)
-        </h1> */}
       </div>
       <h3 className="about-heading">background</h3>
       <h5 className="content">
-        I recently graduated with a Master’s in Human Centered Design and
-        Engineering from the University of Washington and have been working as a
-        UX Designer at UW School of Nursing. Previously, I worked as a Software
-        Developer after completing my Bachelor’s in Computer Engineering.
+        I currently work as a UX Designer and Consultant at the UW School of
+        Nursing, where I am building a digital-therapeutics platform aimed
+        towards helping elderly people adhere to healthy diet. Last year, I
+        completed my Master's in Human Centered Design and Engineering from the
+        University of Washington. I come to design from a Computer Engineering background and 
       </h5>
       <h3 className="about-heading">strengths</h3>
       <h5 className="content mid">

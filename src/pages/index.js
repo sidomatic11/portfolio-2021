@@ -23,8 +23,7 @@ var oProjectData = {
     {
       id: "id_xrm",
       name: "XR Multitasking Design Guide",
-      description:
-        "Helping designers and developers build multitasking systems in XR.",
+      description: "Multi-app management for next-gen XR operating systems",
       role:
         "Formative Research, Sprint Planning and Facilitation, Ideation and Storyboarding, Video Prototyping, Usability Studies",
       tags: ["2020", "•", "xr design", "emerging tech"],
@@ -34,12 +33,12 @@ var oProjectData = {
     },
     {
       id: "id_olitor",
-      name: "Olitor App – UW School of Nursing",
+      name: "Olitor – UW School of Nursing",
       description:
-        "Building a platform to help older adults adhere to the mediterranean diet.",
+        "A digital-therapeutics platform for helping elderly people adhere to a healthier diet",
       role:
-        "Secondary Research, Ideation, Design, Prototyping, Usability, Design and Development Strategy",
-      tags: ["2020", "•", "ux design", "mobile", "strategy"],
+        "Secondary Research, Ideation, Design, Prototyping, Usability, Product Strategy",
+      tags: ["2021", "•", "ux design", "mobile", "strategy"],
       link:
         "https://www.notion.so/Olitor-App-UW-School-of-Nursing-094630a0cc714395905ad675631a6c4f",
       image: oImgOlitor,
@@ -57,10 +56,9 @@ var oProjectData = {
     {
       id: "id_contentserv",
       name: "Contentserv",
-      description:
-        "Design and development of highly functional web components. Leading teams and mentoring new employees.",
+      description: "UI design + development for enterprise web",
       role:
-        "Ideation, Wireframes, Hi-fi mockups, System Architecture, Front End Development (React.js) ",
+        "Ideation, Wireframes, Hi-fi mockups, Code Prototypes, System Architecture, Front End Development (React.js) ",
       tags: ["2018", "•", "web dev", "enterprise"],
       link:
         "https://www.notion.so/Contentserv-Software-Development-171b41fa91b645c3b1dcfaf48dfffc18",
@@ -69,16 +67,6 @@ var oProjectData = {
     },
   ],
   more: [
-    {
-      id: "id_contentserv",
-      name: "Contentserv",
-      description:
-        "Design and development of highly functional web components.",
-      tags: "web development, enterprise",
-      link:
-        "https://www.notion.so/Contentserv-Software-Development-171b41fa91b645c3b1dcfaf48dfffc18",
-      image: oImgContentserv,
-    },
     {
       id: "id_ttt",
       name: "Tic Tac Toe",
@@ -177,6 +165,7 @@ const IndexPage = () => {
 
   return (
     <>
+      {/* Link Preview Summary */}
       <Helmet>
         <title>Siddhant Patil — UX Designer</title>
         <meta name="title" content="Siddhant Patil — UX Designer" />
@@ -186,7 +175,9 @@ const IndexPage = () => {
         />
       </Helmet>
 
+      {/* Page */}
       <Layout sAddClass="homePage">
+        {/* Homepage Body */}
         <div class="wrapper">
           <div class="grid-item intro">
             <div className="banner level-one">
@@ -231,11 +222,8 @@ const IndexPage = () => {
               <h1>
                 <span>Have a </span>
                 <span className="white">challenging problem </span>
-                <span>that I can help break down, simplify and solve for you?</span>
-                {/* &nbsp; Would like to give me a shot? */}
+                <span>that I can solve for you?</span>
               </h1>
-              {/* <br></br>
-              <h1>I can help you.</h1> */}
               <br />
               <br />
               <div className="reach-out">
